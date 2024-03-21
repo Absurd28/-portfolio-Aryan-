@@ -7,167 +7,195 @@
     <title>Aryan - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            background-color: rgb(1, 1, 29);
-            color: azure;
+            background-color: #03051A;
+            color: #ffffff;
             font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
         }
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             height: 80px;
-            background-color: rgb(4, 4, 48);
+            background-color: #040430;
+            padding: 0 20px;
         }
 
         nav ul {
             display: flex;
-            justify-content: center;
+            list-style: none;
         }
 
         nav ul li {
-            list-style: none;
-            margin: 0 23px;
+            margin-right: 20px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: azure;
+            color: #ffffff;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
-            color: rgb(108, 108, 219);
+            color: #6C6CDF;
             font-size: 1.2rem;
         }
 
         main hr {
             border: 0;
-            background: rgb(159, 99, 215);
-            height: 1.2px;
-            margin: 60px 84px;
+            background: #9F63D7;
+            height: 1px;
+            margin: 60px 20px;
         }
 
         .left {
-            font-size: 1.7rem;
+            font-size: 1.2rem;
+            color: #ffffff;
         }
 
         .firstSection {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            margin: 60px 0;
-
-        }
-
-        .firstSection>div {
-            width: 40%;
+            padding: 60px 20px;
         }
 
         .leftSection {
+            text-align: center;
+        }
 
-            font-size: 3rem;
+        .leftSection h2 {
+            font-size: 2.5rem;
+            color: #9F63D7;
+        }
 
+        .leftSection p {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #dddddd;
         }
 
         .rightSection img {
-            width: 80%;
-
-        }
-
-        .purple {
-            color: rgb(159, 99, 215);
-        }
-
-        #element {
-            color: rgb(159, 99, 215);
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-top: 20px;
         }
 
         .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 110vh;
+            padding: 60px 20px;
+            text-align: center;
         }
 
         .secondSection h1 {
             font-size: 2.2rem;
+            color: #9F63D7;
+            margin-bottom: 40px;
         }
 
-        .secondSection .box {
-            background: white;
-            width: 70vw;
-            height: 2px;
-            margin: 56px 0;
+        .box {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
         }
 
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 100px;
+        .vertical {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .image-top {
-            width: 83px;
-            position: relative;
-            top: -70px;
-            left: -39px;
+        .vertical img {
+            width: 80px;
+            border-radius: 50%;
         }
 
         .vertical-title {
-            position: relative;
-            top: 25px;
-            width: 150px;
-            left: -10px;
-
+            font-size: 1.2rem;
+            color: #9F63D7;
+            font-weight: 500;
         }
 
         .vertical-desc {
-            position: relative;
-            top: 56px;
-            color: gray;
-            width: 150px;
-            font-size: 12px;
-            left: -10px;
+            font-size: 1rem;
+            color: #dddddd;
+            max-width: 400px;
+            line-height: 1.5;
         }
 
-       
-
         .social {
-            position: relative;
-            width: 1200px;
-            height: 150px;
-            top: 350px;
-            left: 10px;
-            /* border: 1px solid white; */
+            text-align: center;
+            padding: 60px 20px;
         }
 
         .social h1 {
-            font-size: 43px;
-            font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif), sans-serif;
-            color: rgb(14, 131, 199);
-            text-shadow: 0px 0px 10px rgb(14, 131, 199);
+            font-size: 2rem;
+            color: #0E83C7;
+            margin-bottom: 40px;
         }
 
-        .handles a i {
-            color: white;
-            font-size: 35px;
-            margin: 35px;
-            position: relative;
-            right: 30px;
+        .handles {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
-      
 
+        .handles a {
+            color: #ffffff;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .handles a:hover {
+            color: #6C6CDF;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .firstSection {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .firstSection>div {
+                width: 45%;
+            }
+
+            .secondSection {
+                text-align: left;
+            }
+
+            .box {
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+            .vertical {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .vertical img {
+                align-self: flex-start;
+            }
+        }
     </style>
 </head>
 
@@ -177,12 +205,11 @@
             <div class="left">Welcome To My Portfolio Website</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About Me</a></li>
-                   
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Skills</a></li>
-                    <li> <a href="/">Contact Me</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -191,133 +218,76 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My name is <span class="purple">Aryan</span>
-
-                <div>and I am a passionate</div>
-
-                <span id="element"></span>
-
+                <h2>Hi, My name is <span class="purple">Aryan</span></h2>
+                <p>I am a passionate <span id="element"></span></p>
             </div>
             <div class="rightSection">
-                <img src="me2.png" alt="">
+                <img src="me2.png" alt="Aryan's photo">
             </div>
-
         </section>
         <hr>
         <section class="secondSection">
-            <span class="text-gray">Who am I ?</span>
-            <h1>Here's Every Thing You Wanna Know About Me </h1>
-
+            <h1>Here's Everything You Want to Know About Me</h1>
             <div class="box">
                 <div class="vertical">
-                    <img class="image-top" src="dp.png" alt="">
-                    <div class="vertical-title">
-                        1. Academic Pursuits
+                    <img src="dp.png" alt="Academic Pursuits">
+                    <div>
+                        <div class="vertical-title">Academic Pursuits</div>
+                        <div class="vertical-desc">I'm currently pursuing my B.Tech degree at Gauhati University Institute of Science and Technology, specializing in Computer Science Engineering under the Department of Information Technology. The journey has been exciting, filled with challenges and opportunities for growth. I've been fortunate to explore various subjects, including Web Development, C programming, Cloud Computing, and Cybersecurity, which have broadened my understanding of the field.</div>
                     </div>
-                    <div class="vertical-desc">
-                        I'm currently pursuing my B.Tech degree at Gauhati University Institute of Science and
-                        Technology, specializing in Computer Science Engineering under the Department of Information
-                        Technology. The journey has been exciting, filled with challenges and opportunities for growth.
-                        I've been fortunate to explore various subjects, including Web Development, C programming, Cloud
-                        Computing, and Cybersecurity, which have broadened my understanding of the field.
+                </div>
+               
+                <div class="vertical">
+                    <img src="a2.png" alt="Extracurricular Involvement">
+                    <div>
+                        <div class="vertical-title">Extracurricular Involvement</div>
+                        <div class="vertical-desc">Being a member of the Google Developers Student Club at our university has been a rewarding experience. It's not just about learning new technologies but also about collaborating with like-minded individuals and contributing to meaningful projects. Through the club, I've had the chance to work on innovative solutions, attend workshops, and engage in discussions that have expanded my horizons beyond the classroom.</div>
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="a2.png" alt="">
-                    <div class="vertical-title">
-                        2. Extracurricular Involvement
-                    </div>
-                    <div class="vertical-desc">
-                        Being a member of the Google Developers Student Club at our university has been a rewarding
-                        experience. It's not just about learning new technologies but also about collaborating with
-                        like-minded individuals and contributing to meaningful projects. Through the club, I've had the
-                        chance to work on innovative solutions, attend workshops, and engage in discussions that have
-                        expanded my horizons beyond the classroom.
+                    <img src="a3.png" alt="Artistic Endeavors">
+                    <div>
+                        <div class="vertical-title">Artistic Endeavors</div>
+                        <div class="vertical-desc">Art has always been a significant part of my life, which is why I pursued a diploma in Arts and Craft alongside my technical studies. Painting allows me to express myself creatively, while cooking serves as a delightful blend of art and science. Whether it's experimenting with new recipes or creating vibrant canvases, these hobbies provide a welcome break from the rigors of academics and stimulate my imagination in unique ways.</div>
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="a3.png" alt="">
-                    <div class="vertical-title">
-                        3. Artistic Endeavors
-                    </div>
-                    <div class="vertical-desc">
-                        Art has always been a significant part of my life, which is why I pursued a diploma in Arts and
-                        Craft alongside my technical studies. Painting allows me to express myself creatively, while
-                        cooking serves as a delightful blend of art and science. Whether it's experimenting with new
-                        recipes or creating vibrant canvases, these hobbies provide a welcome break from the rigors of
-                        academics and stimulate my imagination in unique ways.
+                    <img src="a4.png" alt="Travel and Exploration">
+                    <div>
+                        <div class="vertical-title">Travel and Exploration</div>
+                        <div class="vertical-desc">Traveling is not just a pastime for me; it's a source of inspiration and personal growth. Each journey offers a chance to immerse myself in diverse cultures, explore breathtaking landscapes, and connect with people from all walks of life. These experiences have taught me invaluable lessons, fostering adaptability, empathy, and a global perspective that I bring back to my studies and other endeavors.</div>
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="a4.png" alt="">
-                    <div class="vertical-title">
-                        4. Travel and Exploration
-                    </div>
-                    <div class="vertical-desc">
-                        Traveling is not just a pastime for me; it's a source of inspiration and personal growth. Each
-                        journey offers a chance to immerse myself in diverse cultures, explore breathtaking landscapes,
-                        and connect with people from all walks of life. These experiences have taught me invaluable
-                        lessons, fostering adaptability, empathy, and a global perspective that I bring back to my
-                        studies and other endeavors.
+                    <img src="b.png" alt="Innovation and Creativity">
+                    <div>
+                        <div class="vertical-title">Innovation and Creativity</div>
+                        <div class="vertical-desc">Innovation isn't confined to the realm of technology; it permeates every aspect of my life. Whether it's devising new solutions to complex problems or infusing creativity into everyday tasks, I thrive on the challenge of thinking outside the box. My hobbies of painting, cooking, and exploring new places serve as outlets for my creativity, constantly inspiring me to seek novel approaches and push the boundaries of what's possible.</div>
                     </div>
                 </div>
-                <div class="vertical">
-                    <img class="image-top" src="b.png" alt="">
-                    <div class="vertical-title">
-                        5. Innovation and Creativity
-                    </div>
-                    <div class="vertical-desc">
-                        Innovation isn't confined to the realm of technology; it permeates every aspect of my life.
-                        Whether it's devising new solutions to complex problems or infusing creativity into everyday
-                        tasks, I thrive on the challenge of thinking outside the box. My hobbies of painting, cooking,
-                        and exploring new places serve as outlets for my creativity, constantly inspiring me to seek
-                        novel approaches and push the boundaries of what's possible.
-                    </div>
-                </div>
-
-                <div class="vertical">
-
-                </div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-
-
             </div>
-           
         </section>
-   
-   
-            <div class="social" id="socials">
-                <h1>Social Media Handles</h1>
-                <div class="handles">
-                    <a class="icon" href="https://www.instagram.com/_absurd_28?igsh=MXgxcWl0dG5la2I3dQ=="><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a class="icon" href="https://x.com/aryan89328?t=PY1lPnNTRHyV8YtKYFlRdg&s=08"><i
-                            class="fa-brands fa-twitter"></i></a>
-                    <a class="icon" href="https://github.com/Absurd28"><i class="fa-brands fa-github"></i></a>
-                    <a class="icon"
-                        href="https://www.linkedin.com/in/aryan-mitra-472457295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                </div>
+
+        <section class="social">
+            <h1>Social Media Handles</h1>
+            <div class="handles">
+                <a class="icon" href="https://www.instagram.com/_absurd_28?igshid=MXgxcWl0dG5la2I3dQ=="><i class="fab fa-instagram"></i></a>
+                <a class="icon" href="https://x.com/aryan89328?t=PY1lPnNTRHyV8YtKYFlRdg&s=08"><i class="fab fa-twitter"></i></a>
+                <a class="icon" href="https://github.com/Absurd28"><i class="fab fa-github"></i></a>
+                <a class="icon" href="https://www.linkedin.com/in/aryan-mitra-472457295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
             </div>
-            <script src="https://kit.fontawesome.com/ed601e8656.js" crossorigin="anonymous"></script>
-            <script src="script.js"></script>
+        </section>
+    </main>
 
-
-
-        </div>
-  
-
+    <script src="https://kit.fontawesome.com/ed601e8656.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'C programmer', 'Web Designer', 'Artist and love to paint'],
-
             typeSpeed: 50,
         });
     </script>
-     </main>
-
 </body>
 
 </html>
+            
